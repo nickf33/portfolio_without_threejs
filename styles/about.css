@@ -1,0 +1,23 @@
+section#about {
+  height: auto;
+  position: relative;
+}
+
+.inner__wrap.about {
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 10rem 0 6rem;
+  position: relative;
+}
+
+.text__wrap.about {
+  width: 100%;
+  max-width: 25rem;
+  font-size: 1.2rem;
+}
+
+a.link > .char {
+  text-decoration: underline;
+  color: var(--highlight);
+}

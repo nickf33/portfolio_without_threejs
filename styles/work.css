@@ -1,0 +1,134 @@
+section#work {
+  height: auto;
+  padding: 8rem 0 8rem;
+}
+
+.inner__wrap.work {
+  align-items: flex-start;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+
+.work__title__wrap {
+  width: 100%;
+}
+
+.work__title {
+  font-size: 2rem;
+}
+
+.work__item__container {
+  height: 30rem;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 2rem 0 4rem;
+}
+
+.top__border {
+  height: 1px;
+  width: 100%;
+  background-color: var(--off-white);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* work items */
+.work__num {
+  position: relative;
+  top: 0rem;
+  left: 0;
+  font-size: 2rem;
+  /* border: 1px solid red; */
+}
+
+.mask.num__mask {
+  height: 3rem;
+  width: 6rem;
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  overflow: hidden;
+}
+
+.work__item__wrap {
+  width: 100%;
+  min-width: 25rem;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  /* border: 1px solid red; */
+}
+
+.mask.img__mask {
+  object-position: center;
+  height: 20rem;
+  width: 25rem;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mask.img__mask:hover > .work__btn__wrap {
+  opacity: 1;
+}
+
+.work__item__img {
+  height: 34rem;
+  object-position: center;
+}
+
+h3.work__item__title {
+  font-size: 2rem;
+  mix-blend-mode: difference;
+}
+
+p.work__item__detail {
+  font-size: 0.6rem;
+  font-family: var(--light-font);
+  mix-blend-mode: difference;
+  margin-left: 4rem;
+}
+
+.work__arrow {
+  width: 6rem;
+  height: 2rem;
+  position: relative;
+  top: -40%;
+  left: 4rem;
+}
+
+.work__link {
+  position: absolute;
+  right: 0;
+  bottom: 1.4rem;
+  font-family: var(--light-font);
+  font-size: 0.8rem;
+  text-decoration: underline;
+}
+
+button.btn.work__btn {
+  left: 50%;
+  top: 50%;
+  margin: -1rem 0 0 -5rem;
+  z-index: 10;
+  width: 10rem;
+  height: 2rem;
+  opacity: 0 !important;
+  mix-blend-mode: difference;
+}
+
+.img__mask:hover > .work__btn {
+  opacity: 1 !important;
+}

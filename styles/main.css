@@ -1,0 +1,79 @@
+@import "./base.css";
+@import "./utils.css";
+@import "./menu.css";
+@import "./cursor.css";
+@import "./hero.css";
+@import "./about.css";
+@import "./work.css";
+@import "./scroll.css";
+@import "./footer.css";
+
+body {
+  max-width: 100vw;
+  background: url("../images/bg/bg__rect.svg") repeat var(--dark);
+}
+
+.noise__bg::before {
+  animation: grain 8s steps(10) infinite;
+  background-image: url(../images/bg/noise.png);
+  content: "";
+  height: 300%;
+  left: -50%;
+  opacity: 1;
+  position: fixed;
+  top: -100%;
+  width: 300%;
+  z-index: -1;
+}
+
+@keyframes grain {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, 5%);
+  }
+  30% {
+    transform: translate(7%, -25%);
+  }
+  40% {
+    transform: translate(-5%, 25%);
+  }
+  50% {
+    transform: translate(-15%, 10%);
+  }
+  60% {
+    transform: translate(15%, 0%);
+  }
+  70% {
+    transform: translate(0%, 15%);
+  }
+  80% {
+    transform: translate(3%, 35%);
+  }
+  90% {
+    transform: translate(-10%, 10%);
+  }
+}
+
+.bg__radial {
+  position: fixed;
+  top: 0;
+  z-index: 0;
+  right: -25%;
+  height: 100%;
+  width: 100%;
+}
+
+header,
+section {
+  width: 100%;
+}
+
+.reveal__mask {
+  overflow: hidden;
+}

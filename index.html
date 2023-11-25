@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/main.css">
+  <title>Portfolio 2023 V2</title>
+</head>
+
+<body>
+  <!-- Naviagtion -->
+  <div class="noise__bg"></div>
+  <div class="bg__radial">
+    <svg viewBox="0 0 1328 1328" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="664" cy="664" r="664" fill="url(#paint0_radial_287_2)" fill-opacity="0.15" />
+      <defs>
+        <radialGradient id="paint0_radial_287_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+          gradientTransform="translate(664 664) rotate(90) scale(664)">
+          <stop stop-color="#505050" />
+          <stop offset="1" stop-color="#D9D9D9" stop-opacity="0" />
+          <stop offset="1" stop-color="#505050" />
+        </radialGradient>
+      </defs>
+    </svg>
+
+  </div>
+
+  <nav id="nav__bar">
+    <div class="nav__inner">
+      <a href="/">
+        <div class="logo cursor__hover">nickf</div>
+      </a>
+      <div class="menu__btn__mask cursor__hover">
+        <div class="menu__btn" id="open__btn">menu</div>
+        <div class="menu__btn hide" id="close__btn">close</div>
+      </div>
+      <hr>
+    </div>
+  </nav>
+  <!-- Menu Wrap -->
+  <div class="menu__wrap hide">
+
+    <svg class="transition" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <path class="path" fill='#F8ECDE' dur="10s" vector-effect="non-scaling-stroke"
+        d="M 0 100 L 100 100 100 100 0 100 C 0 0, 0 0, 0 100" />
+      <animateMotion dur="10s" repeatCount="indefinite">
+        <mpath xlink:href="#path" />
+      </animateMotion>
+    </svg>
+    <div class="menu__inner">
+      <div class="links__wrap">
+        <div class="menu__link__wrap">
+          <a href="/" class="menu__link cursor__hover">
+            <div class="link__num">01/</div>
+            <div class="link__text">Home</div>
+          </a>
+        </div>
+        <div class="menu__link__wrap cursor__hover">
+          <a href="/" class="menu__link">
+            <div class="link__num">02/</div>
+            <div class="link__text">About</div>
+          </a>
+        </div>
+        <div class="menu__link__wrap cursor__hover">
+          <a href="/" class="menu__link">
+            <div class="link__num">03/</div>
+            <div class="link__text">Work</div>
+          </a>
+        </div>
+        <div class="menu__link__wrap cursor__hover">
+          <a href="/" class="menu__link">
+            <div class="link__num">04/</div>
+            <div class="link__text">Form</div>
+          </a>
+        </div>
+      </div>
+      <div class="contact__wrap">
+        <div class="side__link__wrap">
+          <div class="side__link__item">
+            <p class="side__link__title" id="email">Email:</p>
+            <a href="mailto:hey@nickf.dev" class="side__link">hey@nickf.dev</a>
+          </div>
+          <div class="side__link__item">
+            <p class="side__link__title" id="email">Resume:</p>
+            <a href="/" class="side__link">Click to Download</a>
+          </div>
+        </div>
+        <div class="side__link__icons">
+          <a href="" class="icon__link" id="github">
+            <svg class="icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M13.6545 39.7673C13.7993 39.5859 14.0236 39.4406 14.1466 39.2232C14.3043 38.9419 14.3072 38.6112 14.3072 38.2939C14.3043 37.3192 14.3014 36.3444 14.3 35.3697C14.3 35.0057 14.4375 34.4284 14.1162 34.251C13.8702 34.115 12.7891 34.4124 12.4837 34.4497C10.3621 34.7097 8.39819 34.3617 6.63836 33.1883C5.63543 32.5203 4.97838 31.6362 4.53698 30.5829C3.81336 28.8561 2.56874 27.5174 0.859566 26.5427C0.74234 26.476 0.626562 26.3973 0.538281 26.3027C0.150423 25.8867 0.238704 25.5853 0.813254 25.4373C1.69462 25.2093 2.52822 25.456 3.31407 25.772C4.55 26.2707 5.42847 27.1574 6.12748 28.1934C7.04648 29.5535 8.30122 30.5375 10.0321 30.7895C11.4301 30.9922 12.8426 30.8135 14.1422 30.2308C14.3072 30.1562 14.4288 29.9002 14.4693 29.7095C14.7081 28.5948 15.2016 27.6041 16.0989 26.7574C12.2391 26.1253 8.22018 25.3333 5.67016 22.3145C4.23306 20.6131 3.54563 18.465 3.24315 16.3276C2.79451 13.1621 3.26197 9.89528 5.57754 7.40583C5.86988 7.09115 6.01605 6.82181 5.8583 6.33645C5.5949 5.52442 5.38216 4.64838 5.43571 3.81368C5.50373 2.73629 5.84962 1.67225 6.08551 0.605534C6.12604 0.418859 6.21432 0.241518 6.28668 0.0455089C7.92494 -0.139833 9.44743 0.30552 10.9019 0.958883C11.915 1.41357 12.8658 1.98293 13.8615 2.47228C14.0598 2.56962 14.3405 2.59495 14.5677 2.56429C15.9122 2.38028 17.2466 2.09093 18.5968 1.98959C20.1888 1.86959 21.801 1.79759 23.39 1.90026C25.0167 2.00426 26.6246 2.35094 28.2426 2.57362C28.4365 2.60029 28.6811 2.57362 28.8447 2.48162C30.6769 1.45757 32.5279 0.469528 34.6611 0.0788437C35.2038 -0.0211607 35.7914 -0.0224941 36.337 0.0548426C36.5193 0.0801771 36.6886 0.478861 36.7726 0.732206C37.1822 1.96026 37.4181 3.22032 37.3008 4.50437C37.2444 5.12707 36.981 5.7671 36.9665 6.38446C36.9506 7.03648 37.1793 7.15782 37.6019 7.70985C38.2734 8.58855 38.7698 9.57393 39.1084 10.6006C39.7987 12.6914 39.848 14.9475 39.4384 17.0903C39.0621 19.0583 38.3038 21.0064 36.9188 22.5438C35.6987 23.8972 34.0475 24.8559 32.2833 25.496C31.3874 25.8213 30.4583 26.0653 29.5176 26.2493C29.1703 26.3173 26.8547 26.872 26.7549 26.744C26.9806 27.0307 27.2788 27.3694 27.5306 27.7361C28.0328 28.4681 28.3714 29.2775 28.3931 30.1375C28.4611 32.815 28.4785 35.4937 28.506 38.1712C28.5089 38.5152 28.5147 38.8686 28.6493 39.1899C28.7694 39.4766 29.0111 39.7033 29.302 39.8446C26.846 40.178 24.0804 39.8713 21.5897 39.8713C18.9992 39.8713 16.1626 40.1673 13.6039 39.8459C13.6198 39.8193 13.6386 39.7926 13.6589 39.7673H13.6545Z"
+                fill="#2C2C2C" />
+            </svg>
+          </a>
+          <a href="" class="icon__link" id="linkedin">
+            <svg class="icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M21.7973 16.4764C22.8051 14.6262 24.3854 13.5036 26.349 12.8386C27.5721 12.4253 28.8277 12.2988 30.0964 12.3822C31.9883 12.5048 33.8372 12.8008 35.4566 13.9195C37.0538 15.0213 37.9287 16.5898 38.4411 18.3983C38.9692 20.2615 39.1204 22.1691 39.1217 24.1027C39.1256 28.9896 39.17 33.8752 39.1973 38.7621C39.1973 38.8403 39.1973 38.9185 39.1973 39.0333H31.069V38.5482C31.069 34.9782 31.0756 31.4096 31.0651 27.8396C31.0612 26.6022 31.0717 25.3609 30.9739 24.1288C30.8826 22.9892 30.7248 21.8353 30.0181 20.8678C29.4262 20.0568 28.593 19.68 27.6099 19.5326C26.7402 19.4023 25.894 19.4401 25.0608 19.6852C23.4545 20.1572 22.6578 21.3737 22.3045 22.8992C22.1128 23.7285 22.0228 24.5969 22.0176 25.4483C21.9889 29.9414 22.002 34.4358 21.9994 38.929C21.9994 38.9759 21.9902 39.0228 21.9824 39.1024H13.9023V13.0068H21.6916C21.6916 14.1725 21.6916 15.342 21.6916 16.5116C21.7086 16.5298 21.7268 16.5468 21.7438 16.565C21.7607 16.5351 21.7764 16.5051 21.7933 16.4751L21.7973 16.4764Z"
+                fill="#2C2C2C" />
+              <path d="M0.700684 13.0042H8.77031V39.1154H0.700684V13.0042Z" fill="#2C2C2C" />
+              <path
+                d="M0.00309854 4.62555C-0.0581832 2.45853 1.86893 -0.270466 5.14685 0.0216002C7.39341 0.221092 9.2449 2.09475 9.37529 4.3387C9.5487 7.31673 7.15611 9.30382 4.80133 9.41987C2.1962 9.54764 -0.0959953 7.11985 0.00309854 4.62555Z"
+                fill="#2C2C2C" />
+            </svg>
+          </a>
+          <a href="" class="icon__link" id="behance">
+            <svg class="icon" width="55" height="34" viewBox="0 0 55 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M49.8661 4.53333H33.9996V0H49.8661V4.53333ZM53.7783 27.2C52.7765 30.1399 49.1793 34 42.2162 34C35.2485 34 29.6046 30.0809 29.6046 21.1367C29.6046 12.274 34.8746 7.718 41.9941 7.718C48.9799 7.718 53.2457 11.7572 54.1773 17.7503C54.3541 18.8972 54.4243 20.4431 54.3926 22.6009H36.1983C36.4929 29.8792 44.093 30.1081 46.5976 27.2H53.7783ZM36.3569 18.1333H47.6108C47.3728 14.6268 45.0359 13.1036 41.9963 13.1036C38.6734 13.1036 36.8352 14.8444 36.3569 18.1333ZM14.6561 33.9728H0V0.0475998H15.76C28.1721 0.2312 28.4078 12.3873 21.9252 15.7012C29.7701 18.5572 30.033 33.9728 14.6561 33.9728ZM6.79993 13.6H14.9236C20.6083 13.6 21.5104 6.8 14.2164 6.8H6.79993V13.6ZM14.4861 20.4H6.79993V27.2363H14.3728C21.2974 27.2363 20.8735 20.4 14.4861 20.4Z"
+                fill="black" />
+            </svg>
+
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <header id="hero">
+    <div class="inner__wrap hero">
+      <div class="text__wrap hero">
+        <div class="text__mask">
+          <h1 class="hero__title anim__text">Hi,
+            <span><img class="hero__icon hand" src="./images/icons/hand_emoji.svg" alt="">
+            </span> I'm Nick!
+          </h1>
+        </div>
+        <div class="text__mask">
+          <h1 class="hero__title anim__text fill">Front-end Dev,</h1>
+        </div>
+        <div class="text__mask">
+          <h1 class="hero__title anim__text">UX/UI Designer.</h1>
+        </div>
+      </div>
+      <div class="hero__img__wrap">
+        <div class="hero__img__mask cursor__hover">
+          <img class="hero__img" src="./images/landing/new__main__cut.png" alt="">
+        </div>
+      </div>
+    </div>
+    </div>
+  </header>
+  <!-- Main Area -->
+  <main>
+    <!-- About -->
+    <section id="about">
+      <div class="inner__wrap about">
+        <p class="text__wrap about scroll__reveal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+          tempore
+          aperiam qui
+          dolorum odio, accusamus nihil neque nobis id officiis obcaecati ex quae vitae ab quis
+          <a class="link cursor__hover" href="/">spantenetur animi temporibus hic.</a>
+        </p>
+        <!-- <div class="btn__wrap">
+          <div class="mask w-100">
+            <div class="btn__line"></div>
+          </div>
+          <button class="btn cursor__hover" id="fade__btn">View Resume</button>
+        </div>
+      </div> -->
+    </section>
+
+    <!-- Work Title -->
+    <section id="work">
+      <div class="inner__wrap work mask">
+        <div class="work__title__wrap">
+          <div class="reveal__mask">
+            <h2 class="secondary__title anim__text">Featured Work</h2>
+          </div>
+        </div>
+
+        <!-- Works -->
+        <div class="work__item__container">
+          <div class="top__border"></div>
+          <div class="mask num__mask">
+            <div class="work__num">01/</div>
+          </div>
+          <div class="work__item__wrap">
+            <div class="work__arrow">
+              <svg viewBox="0 0 280 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 0V84H279" stroke="white" />
+                <path d="M249 63L279 84L249 105" stroke="white" />
+              </svg>
+            </div>
+            <div class="mask img__mask cursor__hover">
+              <!-- <button class="btn work__btn">View Work</button> -->
+              <img src="./images/projects/project_1.png" alt="work item one" class="work__item__img">
+            </div>
+            <div class="mask">
+              <h3 class="work__item__title">Metal Dachshund</h3>
+            </div>
+            <div class="mask">
+              <p class="work__item__detail">NextJS • Sanity • Tailwind</p>
+            </div>
+            <div class="link__wrap">
+              <a href="/" class="work__link">view work</a>
+              <div class="underline"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Works -->
+        <div class="work__item__container">
+          <div class="top__border"></div>
+          <div class="mask num__mask">
+            <div class="work__num">02/</div>
+          </div>
+          <div class="work__item__wrap">
+            <div class="mask img__mask cursor__hover">
+              <button class="btn work__btn">View Work</button>
+              <img src="./images/projects/project_2.png" alt="work item one" class="work__item__img">
+            </div>
+            <div class="mask">
+              <h3 class="work__item__title">Metal Dachshund</h3>
+            </div>
+            <div class="mask">
+              <p class="work__item__detail">NextJS • Sanity • Tailwind</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Works -->
+        <div class="work__item__container">
+          <div class="top__border"></div>
+          <div class="mask num__mask">
+            <div class="work__num">03/</div>
+          </div>
+          <div class="work__item__wrap">
+            <div class="mask img__mask cursor__hover">
+              <button class="btn work__btn">View Work</button>
+              <img src="./images/projects/project_3.png" alt="work item one" class="work__item__img">
+            </div>
+            <div class="mask">
+              <h3 class="work__item__title">Metal Dachshund</h3>
+            </div>
+            <div class="mask">
+              <p class="work__item__detail">NextJS • Sanity • Tailwind</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Work Button -->
+        <div class="btn__wrap">
+          <div class="mask w-100">
+            <div class="btn__line"></div>
+          </div>
+          <button class="btn cursor__hover" id="fade__btn">More Work</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="scroll">
+
+      <div class="image__scroll__wrap">
+        <div class="image__track" id="top__track">
+          <div class="scroll__image"></div>
+          <div class="scroll__image"></div>
+          <div class="scroll__image"></div>
+          <div class="scroll__image"></div>
+        </div>
+        <div class="image__track" id="btm__track">
+          <div class="scroll__image"></div>
+          <div class="scroll__image"></div>
+          <div class="scroll__image"></div>
+          <div class="scroll__image"></div>
+        </div>
+      </div>
+
+      <svg id="curve1">
+        <path id="curve__path1"
+          d="M1 0V478.327C161 356.993 578.6 148.727 969 286.327C1457 458.327 1749 738.327 2545 678.327V876"
+          fill="transparent" />
+        <text font-size="1rem" font-family="agrandir-heavy" text-anchor="middle">
+          <textPath href="#curve__path1" fill="transparent" stroke="#F8ECDE" stroke-width="1px"
+            class="text__path outline" id="path1" startOffset="1000">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo reprehenderit at illum ipsam? Officia
+            ad culpa laborum, odit dolore rerum beatae.
+          </textPath>
+        </text>
+      </svg>
+
+      <svg id="curve2" xmlns="http://www.w3.org/2000/svg">
+        <path id="curve__path2"
+          d="M-665.551 11.2041C-408.218 200.537 216.849 576.804 658.449 567.204C1210.45 555.204 1278.45 255.204 1910.45 275.204"
+          fill="transparent" stroke="#F8ECDE" stroke-width="2rem" />
+        <text font-size="1rem" font-family="agrandir-heavy" text-anchor="middle">
+          <textPath href="#curve__path2" id="path2" fill="#2c2c2c" stroke="#2c2c2c" class="text__path fill"
+            startOffset="1000">
+            <tspan dy="5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo reprehenderit at illum ipsam? Officia
+              ad culpa laborum, odit dolore rerum beatae.
+            </tspan>
+          </textPath>
+        </text>
+      </svg>
+    </section>
+  </main>
+
+  <footer id="form">
+    <div class="inner__wrap footer">
+      <div class="footer__text__wrap">
+        <h2 class="secondary__title footer">Get In Touch</h3>
+      </div>
+      <div class="btn__wrap">
+        <div class="btn__line footer"></div>
+        <button class="btn cursor__hover">Contact Form</button>
+      </div>
+      <div class="buttons__wrap footer">
+        <button class="btn footer cursor__hover">hey@nickf.dev</button>
+        <button class="btn footer cursor__hover">+44 7413 977 023</button>
+        <div class="icons__wrap footer">
+          <div class="icon__wrap outline cursor__hover">
+            <svg height="0.75rem" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M13.6545 39.7673C13.7993 39.5859 14.0236 39.4406 14.1466 39.2232C14.3043 38.9419 14.3072 38.6112 14.3072 38.2939C14.3043 37.3192 14.3014 36.3444 14.3 35.3697C14.3 35.0057 14.4375 34.4284 14.1162 34.251C13.8702 34.115 12.7891 34.4124 12.4837 34.4497C10.3621 34.7097 8.39819 34.3617 6.63836 33.1883C5.63543 32.5203 4.97838 31.6362 4.53698 30.5829C3.81336 28.8561 2.56874 27.5174 0.859566 26.5427C0.74234 26.476 0.626562 26.3973 0.538281 26.3027C0.150423 25.8867 0.238704 25.5853 0.813254 25.4373C1.69462 25.2093 2.52822 25.456 3.31407 25.772C4.55 26.2707 5.42847 27.1574 6.12748 28.1934C7.04648 29.5535 8.30122 30.5375 10.0321 30.7895C11.4301 30.9922 12.8426 30.8135 14.1422 30.2308C14.3072 30.1562 14.4288 29.9002 14.4693 29.7095C14.7081 28.5948 15.2016 27.6041 16.0989 26.7574C12.2391 26.1253 8.22018 25.3333 5.67016 22.3145C4.23306 20.6131 3.54563 18.465 3.24315 16.3276C2.79451 13.1621 3.26197 9.89528 5.57754 7.40583C5.86988 7.09115 6.01605 6.82181 5.8583 6.33645C5.5949 5.52442 5.38216 4.64838 5.43571 3.81368C5.50373 2.73629 5.84962 1.67225 6.08551 0.605534C6.12604 0.418859 6.21432 0.241518 6.28668 0.0455089C7.92494 -0.139833 9.44743 0.30552 10.9019 0.958883C11.915 1.41357 12.8658 1.98293 13.8615 2.47228C14.0598 2.56962 14.3405 2.59495 14.5677 2.56429C15.9122 2.38028 17.2466 2.09093 18.5968 1.98959C20.1888 1.86959 21.801 1.79759 23.39 1.90026C25.0167 2.00426 26.6246 2.35094 28.2426 2.57362C28.4365 2.60029 28.6811 2.57362 28.8447 2.48162C30.6769 1.45757 32.5279 0.469528 34.6611 0.0788437C35.2038 -0.0211607 35.7914 -0.0224941 36.337 0.0548426C36.5193 0.0801771 36.6886 0.478861 36.7726 0.732206C37.1822 1.96026 37.4181 3.22032 37.3008 4.50437C37.2444 5.12707 36.981 5.7671 36.9665 6.38446C36.9506 7.03648 37.1793 7.15782 37.6019 7.70985C38.2734 8.58855 38.7698 9.57393 39.1084 10.6006C39.7987 12.6914 39.848 14.9475 39.4384 17.0903C39.0621 19.0583 38.3038 21.0064 36.9188 22.5438C35.6987 23.8972 34.0475 24.8559 32.2833 25.496C31.3874 25.8213 30.4583 26.0653 29.5176 26.2493C29.1703 26.3173 26.8547 26.872 26.7549 26.744C26.9806 27.0307 27.2788 27.3694 27.5306 27.7361C28.0328 28.4681 28.3714 29.2775 28.3931 30.1375C28.4611 32.815 28.4785 35.4937 28.506 38.1712C28.5089 38.5152 28.5147 38.8686 28.6493 39.1899C28.7694 39.4766 29.0111 39.7033 29.302 39.8446C26.846 40.178 24.0804 39.8713 21.5897 39.8713C18.9992 39.8713 16.1626 40.1673 13.6039 39.8459C13.6198 39.8193 13.6386 39.7926 13.6589 39.7673H13.6545Z"
+                fill="var(--white)" />
+            </svg>
+          </div>
+          <div class="icon__wrap outline cursor__hover">
+            <svg height="0.75rem" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M21.7973 16.4764C22.8051 14.6262 24.3854 13.5036 26.349 12.8386C27.5721 12.4253 28.8277 12.2988 30.0964 12.3822C31.9883 12.5048 33.8372 12.8008 35.4566 13.9195C37.0538 15.0213 37.9287 16.5898 38.4411 18.3983C38.9692 20.2615 39.1204 22.1691 39.1217 24.1027C39.1256 28.9896 39.17 33.8752 39.1973 38.7621C39.1973 38.8403 39.1973 38.9185 39.1973 39.0333H31.069V38.5482C31.069 34.9782 31.0756 31.4096 31.0651 27.8396C31.0612 26.6022 31.0717 25.3609 30.9739 24.1288C30.8826 22.9892 30.7248 21.8353 30.0181 20.8678C29.4262 20.0568 28.593 19.68 27.6099 19.5326C26.7402 19.4023 25.894 19.4401 25.0608 19.6852C23.4545 20.1572 22.6578 21.3737 22.3045 22.8992C22.1128 23.7285 22.0228 24.5969 22.0176 25.4483C21.9889 29.9414 22.002 34.4358 21.9994 38.929C21.9994 38.9759 21.9902 39.0228 21.9824 39.1024H13.9023V13.0068H21.6916C21.6916 14.1725 21.6916 15.342 21.6916 16.5116C21.7086 16.5298 21.7268 16.5468 21.7438 16.565C21.7607 16.5351 21.7764 16.5051 21.7933 16.4751L21.7973 16.4764Z"
+                fill="var(--white)" />
+              <path d="M0.700684 13.0042H8.77031V39.1154H0.700684V13.0042Z" fill="var(--white)" />
+              <path
+                d="M0.00309854 4.62555C-0.0581832 2.45853 1.86893 -0.270466 5.14685 0.0216002C7.39341 0.221092 9.2449 2.09475 9.37529 4.3387C9.5487 7.31673 7.15611 9.30382 4.80133 9.41987C2.1962 9.54764 -0.0959953 7.11985 0.00309854 4.62555Z"
+                fill="var(--white)" />
+            </svg>
+          </div>
+          <div class="icon__wrap outline cursor__hover">
+            <svg height="0.5rem" viewBox="0 0 55 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M49.8661 4.53333H33.9996V0H49.8661V4.53333ZM53.7783 27.2C52.7765 30.1399 49.1793 34 42.2162 34C35.2485 34 29.6046 30.0809 29.6046 21.1367C29.6046 12.274 34.8746 7.718 41.9941 7.718C48.9799 7.718 53.2457 11.7572 54.1773 17.7503C54.3541 18.8972 54.4243 20.4431 54.3926 22.6009H36.1983C36.4929 29.8792 44.093 30.1081 46.5976 27.2H53.7783ZM36.3569 18.1333H47.6108C47.3728 14.6268 45.0359 13.1036 41.9963 13.1036C38.6734 13.1036 36.8352 14.8444 36.3569 18.1333ZM14.6561 33.9728H0V0.0475998H15.76C28.1721 0.2312 28.4078 12.3873 21.9252 15.7012C29.7701 18.5572 30.033 33.9728 14.6561 33.9728ZM6.79993 13.6H14.9236C20.6083 13.6 21.5104 6.8 14.2164 6.8H6.79993V13.6ZM14.4861 20.4H6.79993V27.2363H14.3728C21.2974 27.2363 20.8735 20.4 14.4861 20.4Z"
+                fill="var(--white)" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cursor">
+  </div>
+  <script type="module" src="./js/app.js"></script>
+</body>
+
+</html>

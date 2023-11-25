@@ -1,0 +1,82 @@
+header#hero {
+  height: 32rem;
+  min-height: 100vh;
+}
+
+.inner__wrap.hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.text__wrap.hero {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+.text__mask {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero__icon.hand {
+  height: 2rem;
+  margin: 0 0.25rem;
+}
+
+h1.hero__title.fill {
+  color: var(--white);
+}
+
+.hero__img__wrap {
+  width: 79vw;
+  overflow: hidden;
+}
+
+.hero__img__mask {
+  width: 100%;
+  height: 20rem;
+  min-height: 40vh;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.hero__img {
+  width: 79vw;
+  height: 100%;
+  position: relative;
+  z-index: -1;
+  object-fit: cover;
+  object-position: right;
+}
+
+@media only screen and (max-width: 900px) {
+  .text__wrap.hero {
+    min-height: 20rem;
+    height: 80vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h1.hero__title.anim__text {
+    font-size: 2.4rem;
+  }
+  .text__wrap.hero {
+    min-height: 30rem;
+    height: 80vw;
+  }
+}
+
+@media only screen and (max-width: 405px) {
+  h1.hero__title.anim__text {
+    font-size: 2rem;
+  }
+}
